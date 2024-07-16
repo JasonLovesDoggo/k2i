@@ -15,8 +15,7 @@ RUN apt update -y && \
 ADD pyproject.toml /app
 
 RUN pip install --upgrade pip
-RUN pip install poetry
-RUN pip install gunicorn
+RUN pip install poetry gunicorn psycopg2-binary
 
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-root --no-interaction --no-ansi
