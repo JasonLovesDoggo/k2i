@@ -175,8 +175,8 @@ logging.config.dictConfig({
 
 logger = logging.getLogger(__name__)
 
-STATIC_ROOT = BASE_DIR / "static"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 STORAGES = {
 	# ...
@@ -184,3 +184,5 @@ STORAGES = {
 		"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
 	},
 }
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
