@@ -26,6 +26,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "CHANUJHERUHWSUDHNJSDHNEAUIOFJHi*")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ["k2i.jasoncameron.dev"]
+CSRF_TRUSTED_ORIGINS = ["k2i.jasoncameron.dev"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8080", "k2i.jasoncameron.dev"]
 
 AUTH_USER_MODEL = "app.User"
 
