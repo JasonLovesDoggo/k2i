@@ -36,7 +36,7 @@ class Internship(Post):
     stipend = models.IntegerField()
     apply_by = models.DateField()
     posted_on = models.DateTimeField(auto_now_add=True)
-    applicants = models.ManyToManyField(User, related_name="applicants", blank=True)
+    applicants = models.ManyToManyField(User, related_name="internship_applications", blank=True)
 
     def __str__(self):
         return self.title
@@ -48,7 +48,7 @@ class Opportunity(Post):
     posted_on = models.DateTimeField(auto_now_add=True)
     apply_by = models.DateField()
     stipend = models.IntegerField()
-    applicants = models.ManyToManyField(User, related_name="applicants", blank=True)
+    applicants = models.ManyToManyField(User, related_name="opportunities", blank=True)
 
     def __str__(self):
         return self.title
