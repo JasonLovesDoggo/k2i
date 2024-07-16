@@ -175,7 +175,7 @@ logging.config.dictConfig({
 
 logger = logging.getLogger(__name__)
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = BASE_DIR / "static"
 MEDIA_ROOT = BASE_DIR / "media"
 
 STORAGES = {
