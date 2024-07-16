@@ -1,1 +1,0 @@
-{% extends 'base.html' %}{% block content %}<h2>Apply to Internship</h2>{% if application_closed %}<p>Applications for this internship are closed.</p>{% else %}<form method="POST">    {% csrf_token %}    <input type="submit" value="Confirm Application"></form>{% endif %}{% endblock %}
