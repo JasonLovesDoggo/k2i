@@ -36,7 +36,9 @@ class Internship(Post):
     stipend = models.IntegerField()
     apply_by = models.DateField()
     posted_on = models.DateTimeField(auto_now_add=True)
-    applicants = models.ManyToManyField(User, related_name="internship_applications", blank=True)
+    applicants = models.ManyToManyField(
+        User, related_name="internship_applications", blank=True
+    )
 
     def __str__(self):
         return self.title

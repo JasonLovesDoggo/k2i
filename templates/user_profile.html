@@ -1,1 +1,0 @@
-{% extends 'base.html' %}{% block content %}<h2>{{ user.username }}'s Profile</h2><p>Bio: {{ user.bio }}</p><h3>Skills</h3><ul>    {% for skill in user_skills %}    <li>{{ skill }}</li>    {% endfor %}</ul>{% endfor %}{% endblock %}

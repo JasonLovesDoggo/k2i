@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-s$lxfp2-e!h9+91j-to_b4qflgi=(8nl@)#+5_4v84-&z7tvpe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 AUTH_USER_MODEL = "app.User"
 
@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app",
-    'allauth',
-    'allauth.account',
+    "allauth",
+    "allauth.account",
 ]
 
 MIDDLEWARE = [
@@ -55,10 +55,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
-
 ]
 
 ROOT_URLCONF = "k2i.urls"
+TIME_ZONE = "America/New_York"
 
 TEMPLATES = [
     {
