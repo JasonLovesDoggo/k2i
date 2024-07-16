@@ -12,8 +12,17 @@ class UserAdmin(ModelAdmin):
     list_display = ("username", "email", "is_staff", "is_active")
     search_fields = ("username", "email")
 
+
 class OpportunityAdmin(ModelAdmin):
-    list_display = ("title", "type", "company", "location", "posted_on", "apply_by", "stipend")
+    list_display = (
+        "title",
+        "type",
+        "company",
+        "location",
+        "posted_on",
+        "apply_by",
+        "stipend",
+    )
     search_fields = ("title", "company", "location", "type")
 
 
