@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="" />
+    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/k2i/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k2i/k2i/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k2i/k2i/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/k2i/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k2i/k2i/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/k2i/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k2i/k2i/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/k2i/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k2i/k2i/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/k2i/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k2i/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="2jKzvawD3mLUOQhhQ9e1AZ3LVxg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,6 +44,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\os-contribs\k2i" />
+      <recent name="D:\projects\os-contribs\k2i\k2i" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -48,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721150788276</updated>
-      <workItem from="1721150789764" duration="1338000" />
+      <workItem from="1721150789764" duration="1617000" />
     </task>
     <servers />
   </component>
