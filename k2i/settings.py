@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", "CHANUJHERUHWSUDHNJSDHNEAUIOFJHi*")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ["k2i.jasoncameron.dev"]
+ALLOWED_HOSTS = ["k2i.jasoncameron.dev", "127.0.0.1"]
 CSRF_TRUSTED_ORIGINS = ["https://k2i.jasoncameron.dev"]
 CORS_ALLOWED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8080", "https://k2i.jasoncameron.dev"]
 
