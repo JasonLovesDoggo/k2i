@@ -27,7 +27,11 @@
                         <p class="card-text">{{ opportunity.content|truncatechars:150 }}</p>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li><i class="fas fa-map-marker-alt"></i> {{ opportunity.location }}</li>
+                            {% if opportunity.stipend %}
                             <li><i class="fas fa-dollar-sign"></i> ${{ opportunity.stipend }}</li>
+                            {% else %}
+                            <li><i class="fas fa-dollar-sign"></i> Unpaid/Free</li>
+                            {% endif %}
                             {% if opportunity.apply_by %}
                             <li><i class="fas fa-calendar-alt"></i> Apply by: {{ opportunity.apply_by }}</li>
                             {% else %}
