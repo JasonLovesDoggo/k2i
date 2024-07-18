@@ -2,7 +2,7 @@ services:
   web:
     build: .
     volumes:
-      - /srv/static/:/static/
+      - /srv/static/:/app/static/
     ports:
       - "9393:8000"
     env_file:

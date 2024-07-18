@@ -147,7 +147,7 @@ UNFOLD = {
 	"INDEX_TITLE": "k2i Admin",
 }
 
-OGGING_CONFIG = None
+LOGGING_CONFIG = None
 
 # Get loglevel from env
 LOGLEVEL = os.getenv('DJANGO_LOGLEVEL', 'info').upper()
@@ -177,7 +177,7 @@ logging.config.dictConfig({
 logger = logging.getLogger(__name__)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
-STATIC_ROOT = "/static/"
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_EMAIL_REQUIRED = False

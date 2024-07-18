@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Fixed plurals">
-      <change afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/signup.html" afterDir="false" />
+    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Added missing migration">
+      <change afterPath="$PROJECT_DIR$/static/logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k2i/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/k2i/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721150788276</updated>
       <workItem from="1721150789764" duration="10398000" />
-      <workItem from="1721323243629" duration="2456000" />
+      <workItem from="1721323243629" duration="3050000" />
     </task>
     <task id="LOCAL-00001" summary="little refactor">
       <option name="closed" value="true" />
@@ -186,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721325175744</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added login/signup/logout templates">
+      <option name="closed" value="true" />
+      <created>1721325907795</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721325907795</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added missing migration">
+      <option name="closed" value="true" />
+      <created>1721325962932</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721325962932</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +221,8 @@
     <MESSAGE value="Fixed sections &amp; added scholarships" />
     <MESSAGE value="Fixed plural name" />
     <MESSAGE value="Fixed plurals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed plurals" />
+    <MESSAGE value="Added login/signup/logout templates" />
+    <MESSAGE value="Added missing migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added missing migration" />
   </component>
 </project>
