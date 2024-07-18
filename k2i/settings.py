@@ -177,10 +177,8 @@ logging.config.dictConfig({
 logger = logging.getLogger(__name__)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
-if DEBUG:
-	STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-else:
-	STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_EMAIL_REQUIRED = False
