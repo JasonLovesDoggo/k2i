@@ -28,7 +28,11 @@
                         <ul class="list-unstyled mt-3 mb-4">
                             <li><i class="fas fa-map-marker-alt"></i> {{ opportunity.location }}</li>
                             <li><i class="fas fa-dollar-sign"></i> ${{ opportunity.stipend }}</li>
+                            {% if opportunity.apply_by %}
                             <li><i class="fas fa-calendar-alt"></i> Apply by: {{ opportunity.apply_by }}</li>
+                            {% else %}
+                            <li><i class="fas fa-calendar-alt"></i> No Deadline</li>
+                            {% endif %}
                         </ul>
                         <a href="#" class="btn btn-primary w-100">Learn More</a>
                     </div>
