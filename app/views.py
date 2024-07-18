@@ -10,6 +10,9 @@ def home(request):
     
     featured_opportunities = Opportunity.objects.exclude(
         type="Internship").order_by("-apply_by")[:3]
+        
+    print(f'{featured_internships=} {featured_opportunities=}')
+    print(f'{Opportunity.objects.all()=}')
     
     featured_resources = Resource.objects.all()[:3]
     return render(
