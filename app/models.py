@@ -18,6 +18,7 @@ class User(AbstractUser):
 	applied_opportunities = models.ManyToManyField(
 		"Opportunity", related_name="applicants", blank=True
 	)
+	email = None
 
 
 class Post(models.Model):

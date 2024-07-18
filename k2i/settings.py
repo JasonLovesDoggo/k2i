@@ -31,7 +31,7 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8080", "https
 
 AUTH_USER_MODEL = "app.User"
 
-LOGIN_REDIRECT_URL = "/profile"
+LOGIN_REDIRECT_URL = "/"
 
 # Application definition
 
@@ -178,3 +178,13 @@ logger = logging.getLogger(__name__)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 STATIC_ROOT = "/static/"
+
+ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_EMAIL_REQUIRED = False
+
+ACCOUNT_AUTHENTICATION_METHOD = "username"
+ACCOUNT_USERNAME_REQUIRED = True
+
+ACCOUNT_FORMS = {
+	'signup': 'app.forms.CustomSignupForm',
+}
