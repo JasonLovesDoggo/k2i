@@ -60,7 +60,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "k2i.urls"
-TIME_ZONE = "America/New_York"
+TIME_ZONE = "America/Toronto"
 
 TEMPLATES = [
 	{
