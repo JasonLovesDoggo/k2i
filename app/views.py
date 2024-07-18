@@ -26,9 +26,9 @@ def profile(request, username):
     user_interests = (
         user.interests.split(",") if user.interests else ["... Not specified ..."]
     )
-    internships = user.internship_applications.all()
-    opportunities = user.opportunities.all()
-
+    internships = user.applied_opportunities.filter(type="Internship")
+    opportunities = user.applied_opportunities.exclude(type="Internship")
+    
     return render(
         request,
         "profile.html",

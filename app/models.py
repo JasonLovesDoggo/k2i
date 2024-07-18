@@ -15,6 +15,9 @@ class User(AbstractUser):
     interests = models.CharField(
         max_length=255, blank=True, help_text="Comma-separated list of interests"
     )
+    applied_opportunities = models.ManyToManyField(
+        "Opportunity", related_name="applicants", blank=True
+    )
 
 
 class Post(models.Model):
@@ -60,6 +63,21 @@ class Opportunity(models.Model):
 
     def __str__(self):
         return self.title
+
+class Scholarship(models.Model):
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    deadline = models.DateTimeField()
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    contact = models.EmailField(blank=True)
+    posted_on = models.DateField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ["-deadline"]
+
 
 
 class Resource(Post):
