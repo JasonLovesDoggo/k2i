@@ -11,7 +11,11 @@
                     <h1>{{ opportunity.title }}</h1>
                 </div>
                 <div class="card-body">
+                    {% if opportunity.apply_by }}
                     <h4 class="card-subtitle mb-2 text-muted">Apply by: {{ opportunity.apply_by }}</h4>
+                    {% else %}
+                    <h4 class="card-subtitle mb-2 text-muted">Please contact {{ opportunity.contact }} for deadline information</h4>
+                    {% endif %}
                     <p class="card-text">{{ opportunity.description }}</p>
 
                     <h5>Details</h5>

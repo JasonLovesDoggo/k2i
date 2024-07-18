@@ -44,7 +44,11 @@
                 <tr>
                     <td>{{ opportunity.title }}</td>
                     <td>{{ opportunity.description|truncatewords:20 }}</td>
+                    {% if opportunity.apply_by %}
                     <td>{{ opportunity.apply_by }}</td>
+                    {% else %}
+                    <td>N/A</td>
+                    {% endif %}
                     <td>{{ opportunity.get_type_display }}</td>
                     <td>
                         <a href="{% url 'opportunity_detail' opportunity.pk %}" class="btn btn-primary">

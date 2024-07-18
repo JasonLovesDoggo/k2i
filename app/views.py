@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, get_list_or_404
 from django.utils import timezone
 
-from .models import Opportunity, Resource, User
+from .models import Opportunity, Resource, User, Scholarship
 
 
 def home(request):
@@ -73,3 +73,16 @@ def resource_list(request):
     """List of all available resources."""
     resources = get_list_or_404(Resource)
     return render(request, "resource_list.html", {"resources": resources})
+
+
+def scholarship_list(request):
+    """List of all available scholarships."""
+    scholarships = get_list_or_404(Scholarship)
+    return render(request, "scholarship_list.html", {"scholarships": scholarships})
+
+
+def scholarship_detail(request, pk):
+    """Detail view for a single scholarship."""
+    scholarship = get_object_or_404(Scholarship, pk=pk)
+    return render(request, "scholarship_detail.html", {"scholarship": scholarship})
+

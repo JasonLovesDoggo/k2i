@@ -50,7 +50,7 @@ class Opportunity(models.Model):
 
     title = models.CharField(max_length=255)
     description = models.TextField()
-    apply_by = models.DateField()
+    apply_by = models.DateField(blank=True)
     location = models.CharField(max_length=255, blank=True)
     company = models.CharField(max_length=255, blank=True)
     type = models.CharField(max_length=50, choices=TYPE_CHOICES, default=INTERNSHIP)
