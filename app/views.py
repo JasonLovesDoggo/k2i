@@ -1,13 +1,16 @@
 from django.shortcuts import render, get_object_or_404, get_list_or_404
-from django.utils import timezone
 
 from .models import Opportunity, Resource, User, Scholarship
 
 
 def home(request):
     """Homepage with featured opportunities, internships, and resources."""
-    featured_internships = []
-    featured_opportunities = Opportunity.objects.filter(apply_by__gt=timezone.now())[:3]
+    featured_internships = Opportunity.objects.filter(
+        type="Internship").order_by("-apply_by")[:3]
+    
+    featured_opportunities = Opportunity.objects.exclude(
+        type="Internship").order_by("-apply_by")[:3]
+    
     featured_resources = Resource.objects.all()[:3]
     return render(
         request,
