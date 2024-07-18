@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Updated homepage view logic">
+    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Updated view for homepage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721150788276</updated>
       <workItem from="1721150789764" duration="10398000" />
-      <workItem from="1721323243629" duration="3987000" />
+      <workItem from="1721323243629" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="little refactor">
       <option name="closed" value="true" />
@@ -245,7 +246,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721327310633</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Debug no views">
+      <option name="closed" value="true" />
+      <created>1721327476223</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721327476223</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated view for homepage">
+      <option name="closed" value="true" />
+      <created>1721327679082</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721327679082</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +290,8 @@
     <MESSAGE value="Updated static dirs" />
     <MESSAGE value="Updated home" />
     <MESSAGE value="Updated homepage view logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated homepage view logic" />
+    <MESSAGE value="Debug no views" />
+    <MESSAGE value="Updated view for homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated view for homepage" />
   </component>
 </project>
