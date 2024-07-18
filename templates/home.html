@@ -38,7 +38,7 @@
                             <li><i class="fas fa-calendar-alt"></i> No Deadline</li>
                             {% endif %}
                         </ul>
-                        <a href="#" class="btn btn-primary w-100">Learn More</a>
+                        <a href="{% url 'opportunity_detail'  opportunity.id %}" class="btn btn-primary w-100">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -82,9 +82,9 @@
                         <ul class="list-unstyled mt-3 mb-4">
                             <li><i class="fas fa-university"></i> {{ scholarship.institution }}</li>
                             <li><i class="fas fa-dollar-sign"></i> ${{ scholarship.amount }}</li>
-                            <li><i class="fas fa-calendar-alt"></i> Apply by: {{ scholarship.apply_by }}</li>
+                            <li><i class="fas fa-calendar-alt"></i> Apply by: {{ scholarship.deadline }}</li>
                         </ul>
-                        <a href="#" class="btn btn-success w-100">Learn More</a>
+                        <a href="{% url 'scholarship_detail' scholarship.id %}" class="btn btn-success w-100">Learn More</a>
                     </div>
                 </div>
             </div>
