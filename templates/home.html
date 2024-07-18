@@ -21,6 +21,7 @@
             <div class="col">
                 <div class="card h-100 card-shadow border-0">
                     <div class="card-body">
+                        <span class="badge bg-primary">{{ opportunity.type }}</span>
                         <h5 class="card-title">{{ opportunity.title }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ opportunity.company }}</h6>
                         <p class="card-text">{{ opportunity.content|truncatechars:150 }}</p>

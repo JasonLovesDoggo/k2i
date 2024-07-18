@@ -5,23 +5,16 @@ from .models import Opportunity, Resource, User, Scholarship
 
 def home(request):
     """Homepage with featured opportunities, internships, and resources."""
-    featured_internships = Opportunity.objects.filter(
-        type="Internship").order_by("-apply_by")[:3]
-    
-    featured_opportunities = Opportunity.objects.exclude(
-        type="Internship").order_by("-apply_by")[:3]
-        
-    print(f'{featured_internships=} {featured_opportunities=}')
-    print(f'{Opportunity.objects.all()=}')
-    
+    featured_opportunities = Opportunity.objects.order_by("-apply_by")[:3]
     featured_resources = Resource.objects.all()[:3]
     return render(
         request,
         "home.html",
         {
-            "featured_internships": featured_internships,
             "featured_opportunities": featured_opportunities,
             "featured_resources": featured_resources,
+            "featured_scholarships": Scholarship.objects.all()[:3],
+            
         },
     )
 
