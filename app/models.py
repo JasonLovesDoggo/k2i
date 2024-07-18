@@ -41,12 +41,16 @@ class Opportunity(models.Model):
 	FULL_TIME = "Full-time"
 	PART_TIME = "Part-time"
 	CONTRACT = "Contract"
+	COURSE = "Course"
+	WORKSHOP = "Workshop"
 	
 	TYPE_CHOICES = [
 		(INTERNSHIP, "Internship"),
 		(FULL_TIME, "Full-time"),
 		(PART_TIME, "Part-time"),
 		(CONTRACT, "Contract"),
+		(COURSE, "Course"),
+		(WORKSHOP, "Workshop"),
 	]
 	
 	title = models.CharField(max_length=255)
