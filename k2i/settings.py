@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+
 import os
 from pathlib import Path
 import logging.config
@@ -27,7 +28,11 @@ DEBUG = os.getenv("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ["k2i.jasoncameron.dev", "127.0.0.1"]
 CSRF_TRUSTED_ORIGINS = ["https://k2i.jasoncameron.dev"]
-CORS_ALLOWED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8080", "https://k2i.jasoncameron.dev"]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8080",
+    "https://k2i.jasoncameron.dev",
+]
 
 AUTH_USER_MODEL = "app.User"
 
@@ -36,27 +41,27 @@ LOGIN_REDIRECT_URL = "/"
 # Application definition
 
 INSTALLED_APPS = [
-	"unfold",
-	"django.contrib.admin",
-	"django.contrib.auth",
-	"django.contrib.contenttypes",
-	"django.contrib.sessions",
-	"django.contrib.messages",
-	"django.contrib.staticfiles",
-	"app",
-	"allauth",
-	"allauth.account",
+    "unfold",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "app",
+    "allauth",
+    "allauth.account",
 ]
 
 MIDDLEWARE = [
-	"django.middleware.security.SecurityMiddleware",
-	"django.contrib.sessions.middleware.SessionMiddleware",
-	"django.middleware.common.CommonMiddleware",
-	"django.middleware.csrf.CsrfViewMiddleware",
-	"django.contrib.auth.middleware.AuthenticationMiddleware",
-	"django.contrib.messages.middleware.MessageMiddleware",
-	"django.middleware.clickjacking.XFrameOptionsMiddleware",
-	"allauth.account.middleware.AccountMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = "k2i.urls"
@@ -66,19 +71,19 @@ USE_L10N = True
 USE_TZ = True
 
 TEMPLATES = [
-	{
-		"BACKEND": "django.template.backends.django.DjangoTemplates",
-		"DIRS": ["templates"],
-		"APP_DIRS": True,
-		"OPTIONS": {
-			"context_processors": [
-				"django.template.context_processors.debug",
-				"django.template.context_processors.request",
-				"django.contrib.auth.context_processors.auth",
-				"django.contrib.messages.context_processors.messages",
-			],
-		},
-	},
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": ["templates"],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
 ]
 
 WSGI_APPLICATION = "k2i.wsgi.application"
@@ -87,40 +92,40 @@ WSGI_APPLICATION = "k2i.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 if DEBUG:
-	DATABASES = {
-		"default": {
-			"ENGINE": "django.db.backends.sqlite3",
-			"NAME": BASE_DIR / "db.sqlite3",
-		}
-	}
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 else:
-	DATABASES = {
-		"default": {
-			"ENGINE": "django.db.backends.postgresql",
-			"NAME": "k2i",
-			"PASSWORD": os.environ.get("DB_PASSWORD"),
-			"USER": os.environ.get("DB_USER"),
-			"HOST": os.environ.get("DB_HOST"),
-			"PORT": os.environ.get("DB_PORT"),
-		}
-	}
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": "k2i",
+            "PASSWORD": os.environ.get("DB_PASSWORD"),
+            "USER": os.environ.get("DB_USER"),
+            "HOST": os.environ.get("DB_HOST"),
+            "PORT": os.environ.get("DB_PORT"),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-	{
-		"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-	},
-	{
-		"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-	},
-	{
-		"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-	},
-	{
-		"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-	},
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
 ]
 
 # Internationalization
@@ -145,37 +150,41 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 UNFOLD = {
-	"SITE_TITLE": "K2I Admin",
-	"SITE_HEADER": "K2I Admin",
-	"INDEX_TITLE": "k2i Admin",
+    "SITE_TITLE": "K2I Admin",
+    "SITE_HEADER": "K2I Admin",
+    "INDEX_TITLE": "k2i Admin",
 }
 
 LOGGING_CONFIG = None
 
 # Get loglevel from env
-LOGLEVEL = os.getenv('DJANGO_LOGLEVEL', 'info').upper()
+LOGLEVEL = os.getenv("DJANGO_LOGLEVEL", "info").upper()
 
-logging.config.dictConfig({
-	'version': 1,
-	'disable_existing_loggers': False,
-	'formatters': {
-		'console': {
-			'format': '%(asctime)s %(levelname)s [%(name)s:%(lineno)s] %(module)s %(process)d %(thread)d %(message)s',
-		},
-	},
-	'handlers': {
-		'console': {
-			'class': 'logging.StreamHandler',
-			'formatter': 'console',
-		},
-	},
-	'loggers': {
-		'': {
-			'level': LOGLEVEL,
-			'handlers': ['console', ],
-		},
-	},
-})
+logging.config.dictConfig(
+    {
+        "version": 1,
+        "disable_existing_loggers": False,
+        "formatters": {
+            "console": {
+                "format": "%(asctime)s %(levelname)s [%(name)s:%(lineno)s] %(module)s %(process)d %(thread)d %(message)s",
+            },
+        },
+        "handlers": {
+            "console": {
+                "class": "logging.StreamHandler",
+                "formatter": "console",
+            },
+        },
+        "loggers": {
+            "": {
+                "level": LOGLEVEL,
+                "handlers": [
+                    "console",
+                ],
+            },
+        },
+    }
+)
 
 logger = logging.getLogger(__name__)
 
@@ -190,5 +199,5 @@ ACCOUNT_AUTHENTICATION_METHOD = "username"
 ACCOUNT_USERNAME_REQUIRED = True
 
 ACCOUNT_FORMS = {
-	'signup': 'app.forms.CustomSignupForm',
+    "signup": "app.forms.CustomSignupForm",
 }

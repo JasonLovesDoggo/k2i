@@ -30,6 +30,7 @@ class ResourceAdmin(ModelAdmin):
     list_display = ("title", "author", "created_at", "updated_at")
     search_fields = ("title", "author")
 
+
 class ScholarshipAdmin(ModelAdmin):
     list_display = ("title", "deadline", "description", "amount")
     search_fields = ("title", "amount", "deadline")

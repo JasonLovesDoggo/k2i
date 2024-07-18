@@ -14,7 +14,6 @@ def home(request):
             "featured_opportunities": featured_opportunities,
             "featured_resources": featured_resources,
             "featured_scholarships": Scholarship.objects.all()[:3],
-            
         },
     )
 
@@ -27,7 +26,7 @@ def profile(request, username):
     )
     internships = user.applied_opportunities.filter(type="Internship")
     opportunities = user.applied_opportunities.exclude(type="Internship")
-    
+
     return render(
         request,
         "profile.html",
@@ -84,4 +83,3 @@ def scholarship_detail(request, pk):
     """Detail view for a single scholarship."""
     scholarship = get_object_or_404(Scholarship, pk=pk)
     return render(request, "scholarship_detail.html", {"scholarship": scholarship})
-

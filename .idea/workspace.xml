@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Updated view for homepage">
+    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Fixed URLS">
+      <change beforePath="$PROJECT_DIR$/.idea/k2i.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/k2i.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -76,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721150788276</updated>
       <workItem from="1721150789764" duration="10398000" />
-      <workItem from="1721323243629" duration="4779000" />
+      <workItem from="1721323243629" duration="6823000" />
+      <workItem from="1721331524676" duration="1892000" />
     </task>
     <task id="LOCAL-00001" summary="little refactor">
       <option name="closed" value="true" />
@@ -262,22 +268,109 @@
       <option name="project" value="LOCAL" />
       <updated>1721327679082</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added a README">
+      <option name="closed" value="true" />
+      <created>1721328203002</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721328203002</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixed footer">
+      <option name="closed" value="true" />
+      <created>1721330061489</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1721330061489</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Allowed apply by to be null">
+      <option name="closed" value="true" />
+      <created>1721330551798</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1721330551798</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Allowed apply by to be null">
+      <option name="closed" value="true" />
+      <created>1721330604434</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1721330604434</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixed time">
+      <option name="closed" value="true" />
+      <created>1721330655055</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1721330655055</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated TZ">
+      <option name="closed" value="true" />
+      <created>1721330675318</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1721330675318</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Updated TZ and added DEBUG to env example">
+      <option name="closed" value="true" />
+      <created>1721330920892</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1721330920892</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added more model choices">
+      <option name="closed" value="true" />
+      <created>1721331590462</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1721331590462</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added the miogration">
+      <option name="closed" value="true" />
+      <created>1721331653226</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1721331653226</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Updated apply by deadline">
+      <option name="closed" value="true" />
+      <created>1721331773214</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1721331773214</updated>
+    </task>
+    <task id="LOCAL-00034" summary="updated null stipends">
+      <option name="closed" value="true" />
+      <created>1721331834901</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1721331834901</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fixed URLS">
+      <option name="closed" value="true" />
+      <created>1721332137589</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1721332137589</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="little refactor" />
-    <MESSAGE value="Added models &amp; views" />
-    <MESSAGE value="Add migrations &amp; fix models" />
-    <MESSAGE value="V 0.5" />
-    <MESSAGE value="Fixed all pages, add bootstrap UI and proper admin interfaces." />
-    <MESSAGE value="Most up to date working version" />
-    <MESSAGE value="+ migration" />
-    <MESSAGE value="add git attr" />
-    <MESSAGE value="fixed imports" />
     <MESSAGE value="Fixed profile page" />
     <MESSAGE value="Fixed sections &amp; added scholarships" />
     <MESSAGE value="Fixed plural name" />
@@ -292,6 +385,17 @@
     <MESSAGE value="Updated homepage view logic" />
     <MESSAGE value="Debug no views" />
     <MESSAGE value="Updated view for homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated view for homepage" />
+    <MESSAGE value="Added a README" />
+    <MESSAGE value="Fixed footer" />
+    <MESSAGE value="Allowed apply by to be null" />
+    <MESSAGE value="Fixed time" />
+    <MESSAGE value="Updated TZ" />
+    <MESSAGE value="Updated TZ and added DEBUG to env example" />
+    <MESSAGE value="Added more model choices" />
+    <MESSAGE value="Added the miogration" />
+    <MESSAGE value="Updated apply by deadline" />
+    <MESSAGE value="updated null stipends" />
+    <MESSAGE value="Fixed URLS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed URLS" />
   </component>
 </project>
