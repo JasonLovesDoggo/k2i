@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Fixed URLS">
-      <change beforePath="$PROJECT_DIR$/.idea/k2i.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/k2i.iml" afterDir="false" />
+    <list default="true" id="2a0d32cb-4551-4c71-b5f1-72bec57ed5e8" name="Changes" comment="Updated site name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,9 @@
       <updated>1721150788276</updated>
       <workItem from="1721150789764" duration="10398000" />
       <workItem from="1721323243629" duration="6823000" />
-      <workItem from="1721331524676" duration="1892000" />
+      <workItem from="1721331524676" duration="2539000" />
+      <workItem from="1721396857753" duration="119000" />
+      <workItem from="1721409619966" duration="2473000" />
     </task>
     <task id="LOCAL-00001" summary="little refactor">
       <option name="closed" value="true" />
@@ -364,16 +367,37 @@
       <option name="project" value="LOCAL" />
       <updated>1721332137589</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Fixed logic issue">
+      <option name="closed" value="true" />
+      <created>1721334739235</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1721334739235</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Fixed footer issues">
+      <option name="closed" value="true" />
+      <created>1721417252217</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1721417252217</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Updated site name">
+      <option name="closed" value="true" />
+      <created>1721418072372</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1721418072372</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed profile page" />
-    <MESSAGE value="Fixed sections &amp; added scholarships" />
-    <MESSAGE value="Fixed plural name" />
     <MESSAGE value="Fixed plurals" />
     <MESSAGE value="Added login/signup/logout templates" />
     <MESSAGE value="Added missing migration" />
@@ -396,6 +420,9 @@
     <MESSAGE value="Updated apply by deadline" />
     <MESSAGE value="updated null stipends" />
     <MESSAGE value="Fixed URLS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed URLS" />
+    <MESSAGE value="Fixed logic issue" />
+    <MESSAGE value="Fixed footer issues" />
+    <MESSAGE value="Updated site name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated site name" />
   </component>
 </project>

@@ -6,14 +6,14 @@
     <title>{% block title %}Diverse Voices{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="logo">
-            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'logo.jpg' %}" style="margin-left: 8px; margin-top: -5px" width="30%" alt="Lassonde logo"/></a>
-        </div>
+            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'logo.png' %}" height="56px" width="56px" style="margin-left: 8px; margin-top: -5px;" alt="Lassonde logo" /></a>
+<!--        </div>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
